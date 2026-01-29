@@ -2,32 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Alex Kiprop | HTML Project</title>
   </head>
+
   <body>
-    <!-- NAVBAR -->
+    <!-- NAVIGATION BAR -->
     <header>
       <nav>
-        <a href="#home">Home</a> | <a href="#about">About</a> |
-        <a href="#work">Work</a> | <a href="#resume">Resume</a> |
-        <a href="#contact">Contact</a>
+        <ul class="main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
       </nav>
     </header>
 
     <hr />
 
-    <!-- HOME SECTION -->
+    <!-- HOME SECTION-->
     <section id="home">
-      <h1>Welcome</h1>
+      <h2>Welcome</h2>
       <p>
         Hi, my name is <strong>Alex Kiprop</strong>. This is a simple HTML
-        project demonstrating basic web structure and Git usage.
+        project demonstrating basic web structure, semantic HTML, and Git usage.
       </p>
     </section>
 
     <hr />
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION-->
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -39,7 +46,7 @@
 
     <hr />
 
-    <!-- WORK SECTION -->
+    <!-- WORK SECTION-->
     <section id="work">
       <h2>Work</h2>
       <ul>
@@ -52,12 +59,10 @@
 
     <hr />
 
-    <!-- RESUME SECTION -->
+    <!-- RESUME SECTION-->
     <section id="resume">
       <h2>Resume</h2>
-      <p>
-        <strong>Skills:</strong>
-      </p>
+      <p><strong>Skills:</strong></p>
       <ul>
         <li>HTML</li>
         <li>Git & GitHub</li>
@@ -68,9 +73,9 @@
 
     <hr />
 
-    <!-- CONTACT SECTION -->
-    <section id="work">
-      <h2>Work</h2>
+    <!-- Demonstrates use of HTML tables -->
+    <section>
+      <h2>Projects</h2>
 
       <table border="1" cellpadding="10">
         <thead>
@@ -102,7 +107,79 @@
 
     <hr />
 
-    <!-- FOOTER -->
+    <!-- MEDIA SECTION Demonstrates use of image, audio, and video elements -->
+    <section id="media">
+      <h2>Media</h2>
+
+      <!-- IMAGE -->
+      <h3>Developer Image</h3>
+      <img src="images/developer.jpg" alt="Developer working" width="200" />
+
+      <br /><br />
+
+      <!-- AUDIO -->
+      <h3>Sample Audio</h3>
+      <audio controls>
+        <source src="audio/sample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <br /><br />
+
+      <!-- YOUTUBE VIDEO -->
+      <h3>HTML & CSS Tutorial</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/AKZ6KGcRMrk"
+        title="HTML and CSS Full Course"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+        "
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <hr />
+
+    <!-- CONTACT SECTION Contains an HTML form for user input-->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form>
+        <!-- Name Field -->
+        <div class="input-container">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Email Field -->
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Message Field -->
+        <div class="input-container">
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <!--FOOTER -->
     <footer>
       <p>&copy; 2026 Alex Kiprop. All rights reserved.</p>
     </footer>

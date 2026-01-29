@@ -1,0 +1,174 @@
+/* =========================
+   RESET & BASE STYLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* RESET STYLES FOR UL LI */
+ul.main-nav {
+  list-style-type: none;
+  
+
+}
+ul.main-nav li {
+  display: inline;
+  margin: 0 0.5rem;
+  border-right: solid 2px #ffffff;
+}
+ul.main-nav li:last-child {
+  border-right: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+header {
+  background-color: #0f172a;
+  padding: 1rem;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+/* =========================
+   TEXT & LISTS
+========================= */
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   TABLE
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/* =========================
+   MEDIA
+========================= */
+img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+audio,
+video {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+  margin-top: 1rem;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+
+button {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e293b;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
